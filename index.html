@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>حاسبة الزكاة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>حاسبة الزكاة</h1>
+    <nav>
+      <ul>
+        <li><a href="#calculator">الحاسبة</a></li>
+        <li><a href="#about">عن الزكاة</a></li>
+        <li><a href="#faq">الأسئلة الشائعة</a></li>
+        <li><a href="#contact">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="calculator">
+      <h2>احسب زكاتك</h2>
+      <form id="zakatForm">
+        <label for="gold">قيمة الذهب (درهم):</label>
+        <input type="number" id="gold" name="gold" min="0" step="0.01" />
+
+        <label for="cash">النقود والأموال الأخرى (درهم):</label>
+        <input type="number" id="cash" name="cash" min="0" step="0.01" />
+
+        <label for="stocks">قيمة الأسهم والسندات (درهم):</label>
+        <input type="number" id="stocks" name="stocks" min="0" step="0.01" />
+
+        <label for="debts">الديون المستحقة لك (درهم):</label>
+        <input type="number" id="debts" name="debts" min="0" step="0.01" />
+
+        <label for="liabilities">الديون والخصوم عليك (درهم):</label>
+        <input type="number" id="liabilities" name="liabilities" min="0" step="0.01" />
+
+        <button type="submit">احسب الزكاة</button>
+      </form>
+      <div id="result" style="margin-top: 20px; font-weight: bold;"></div>
+    </section>
+
+    <section id="about">
+      <h2>ما هي الزكاة؟</h2>
+      <p>
+        الزكاة هي الركن الثالث من أركان الإسلام، وهي حق واجب على المسلمين، تُخرج من أموالهم بنسبة محددة لتطهير المال
+        ونمائه، وتوزع على مصارف الزكاة الثمانية.
+      </p>
+    </section>
+
+    <section id="faq">
+      <h2>الأسئلة الشائعة</h2>
+      <details>
+        <summary>هل تحسب الزكاة على الدخل الشهري؟</summary>
+        <p>الزكاة لا تُفرض على الدخل الشهري بل على المال المتبقي بعد مرور حول كامل إذا بلغ النصاب.</p>
+      </details>
+      <details>
+        <summary>كيف أعرف أن مالي بلغ النصاب؟</summary>
+        <p>النصاب يعادل قيمة 85 غرامًا من الذهب الخالص، ويتم تحديثه حسب سعر الذهب الحالي.</p>
+      </details>
+    </section>
+
+    <section id="contact">
+      <h2>اتصل بنا</h2>
+      <form id="contactForm">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">رسالتك:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">إرسال</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 جميع الحقوق محفوظة - موقع حاسبة الزكاة</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
